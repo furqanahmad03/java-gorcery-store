@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app>
+  <!-- Login Path -->
+  <servlet>
+    <servlet-name>getAuthentication</servlet-name>
+    <servlet-class>AuthenticationServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>getAuthentication</servlet-name>
+    <url-pattern>/getAuthentication</url-pattern>
+  </servlet-mapping>
+
+  <!-- Logout Path -->
+  <servlet>
+    <servlet-name>Logout</servlet-name>
+    <servlet-class>Logout</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>Logout</servlet-name>
+    <url-pattern>/Logout</url-pattern>
+  </servlet-mapping>
+
+  <!-- Admin CRUD Path -->
+  <servlet>
+    <servlet-name>CRUD</servlet-name>
+    <servlet-class>CRUD</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>CRUD</servlet-name>
+    <url-pattern>/CRUD</url-pattern>
+  </servlet-mapping>
+
+  <!-- Listing Items -->
+  <servlet>
+    <servlet-name>ListItems</servlet-name>
+    <servlet-class>ListItems</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>ListItems</servlet-name>
+    <url-pattern>/ListItems</url-pattern>
+  </servlet-mapping>
+
+  <!-- Add to cart Items -->
+  <servlet>
+    <servlet-name>AddToCart</servlet-name>
+    <servlet-class>AddToCart</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>AddToCart</servlet-name>
+    <url-pattern>/AddToCart</url-pattern>
+  </servlet-mapping>
+
+  <!-- Add to cart Items -->
+  <servlet>
+    <servlet-name>EditOrDelete</servlet-name>
+    <servlet-class>EditOrDelete</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>EditOrDelete</servlet-name>
+    <url-pattern>/EditOrDelete</url-pattern>
+  </servlet-mapping>
+
+
+  <!-- Placing Order -->
+  <servlet>
+    <servlet-name>PlaceOrder</servlet-name>
+    <servlet-class>PlaceOrder</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>PlaceOrder</servlet-name>
+    <url-pattern>/PlaceOrder</url-pattern>
+  </servlet-mapping>
+
+  <!-- Change Status -->
+  <servlet>
+    <servlet-name>ChangeStatus</servlet-name>
+    <servlet-class>ChangeStatus</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>ChangeStatus</servlet-name>
+    <url-pattern>/ChangeStatus</url-pattern>
+  </servlet-mapping>
+
+  <!-- Session Invalidation -->
+  <!-- <session-config>
+    <session-timeout>30</session-timeout>
+  </session-config> -->
+
+
+</web-app>
